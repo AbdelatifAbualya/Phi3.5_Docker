@@ -5,7 +5,7 @@ FROM runpod/worker-vllm:stable-cuda11.8.0
 RUN pip install scipy
 
 # Set the model name as an environment variable
-ENV MODEL_NAME="microsoft/phi-3-small"
+ENV MODEL_NAME="microsoft/Phi-3.5-mini-instruct"
 
 # Set the vLLM arguments as an environment variable
 ENV VLLM_ARGS="--trust-remote-code --max-model-len 8192"
