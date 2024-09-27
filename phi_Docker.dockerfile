@@ -10,4 +10,5 @@ ENV MODEL_NAME="microsoft/phi-3-small"
 # Set the vLLM arguments as an environment variable
 ENV VLLM_ARGS="--trust-remote-code --max-model-len 8192"
 
-# The CMD is inherited from the base image, so we don't need to specify it again
+# Keep the container running by adding an infinite sleep command
+CMD ["bash", "-c", "sleep infinity"]
